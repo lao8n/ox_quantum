@@ -1,0 +1,6 @@
+ipython~=7.28.0
+notebook~=6.4.5
+qiskit[visualization]~=0.31.0
+matplotlib~=3.4.3
+seaborn~=0.11.1
+scipy~=1.7.1
