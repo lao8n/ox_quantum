@@ -171,8 +171,6 @@ def expval(counts: Mapping[str, float]) -> float:
         Computes the expectation value from a counts dictionary.
     """
     shots = sum(counts.values())
-    for k, v in counts.items():
-        print(f"pauli {k}, shots {v}")
     p0 = sum(c/shots for b, c in counts.items() # probability = counts/shots
              if b.count("1")%2 == 0) # even bitsum
     p1 = sum(c/shots for b, c in counts.items()
